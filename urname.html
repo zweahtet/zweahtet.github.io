@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Your Name(Kimino nawa) - All Anime Theme Songs</title>
+        <link rel="stylesheet" type="text/css" href="../css/urname-stylesheet.css">
+
+    </head>
+
+    <body class="urname-bg">
+
+        <h1>Your Name(Kimino nawa)</h1>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Home</a>
+            <a href="index.html" class="dropbtn">Lists of Anime</a>
+            <a href="">Reference</a>
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <span class="hidden-menu" onclick="openNav()"><!--Menu icon-->&#9776;Menu</span>
+
+        <div id="main">
+            <div class="search-bar">
+                <form>
+                    <input type="text" id="mySearch" onkeyup="myFunction()" name="search" placeholder="Search Anime here ..." title="Type in a category" value="Search Anime..." onblur="if(this.value=='') this.value='Search Anime...';" onfocus="if(this.value=='Search Anime...') this.value='';">
+                </form>
+            </div>
+            <div class = "songs-content">
+                <div>
+                    <label for="mp3">Sparkle</label><br>
+                    <audio src="file:///C:/Users/zhtet/Desktop/All%20anime%20theme%20songs%20-%20website/songs/urname.mp3/Sparkle.mp3" controls="controls" type="audio/mp3" title="sparkle"></audio>
+                </div>
+                <div>
+                    <label for="mp3">Date</label><br>
+                    <audio src="file:///C:/Users/zhtet/Desktop/All%20anime%20theme%20songs%20-%20website/songs/urname.mp3/date.mp3" controls="controls" type="audio/mp3" title="date"></audio>
+                </div>
+                <div>
+                    <label for="mp3">Previous Life</label><br>
+                    <audio src="file:///C:/Users/zhtet/Desktop/All%20anime%20theme%20songs%20-%20website/songs/urname.mp3/previous life.mp3" controls="controls" type="audio/mp3" title="previous life"></audio>
+                </div>
+                <div>
+                    <label for="mp3">Autumn Festival</label><br>
+                    <audio src="file:///C:/Users/zhtet/Desktop/All%20anime%20theme%20songs%20-%20website/songs/urname.mp3/autumn festival.mp3" controls="controls" type="audio/mp3" title="autumn festival"></audio>
+                </div> 
+            </div>
+        </div>
+            
+
+        <script type="text/javascript">
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+        </script>
+    </body>

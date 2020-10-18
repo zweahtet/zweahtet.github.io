@@ -1,0 +1,56 @@
+/* body css-properties*/
+body {
+  background-image: url(https://i.imgur.com/sjuCDTP.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+h1 {
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 10px black;
+  z-index: 10;
+  position: sticky;
+  top: 5px;
+}
+
+h2{
+  color: white;
+  background-color: red;
+  margin: 10px 700px 20px 10px;
+  border: 1px solid white;
+  text-align: center;
+  position: sticky;
+  top: 70px;
+  z-index: 9;
+}
+/* lists of all anime - css-properties*/
+ul a:link {
+  color: yellow;
+}
+
+.h-3 {
+  text-decoration: underline;
+}
+.anime-lists {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  position: absolute;
+  left: 735px;
+  top: 95px
+}
+
+.naruto {
+  line-height: 1.5;
+  position: relative;
+  left: 300px;
+}
+
+label {
+  color: white;
+}

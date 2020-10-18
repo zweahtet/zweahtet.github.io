@@ -1,31 +1,377 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Lists of Anime Songs</title>
         <meta charset="utf-8">
-        <title>Home - All Anime Theme Songs</title>
-        <link rel="stylesheet" type="text/css" href="css/design-properties.css">
-    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/list-index-stylesheet.css">
 
+    </head>
     <body>
+        <div class="main">
+        <h1>Lists of Anime Songs - All Anime Theme Songs</h1>
         <header>
-            <h1>Home - All Anime Theme Songs</h1>
             <nav>
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="lists/index.html">Lists of Anime songs</a></li>
-                    <li><a href="">Reference</a></li>
-                </ul>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="../index.html">Home</a>
+                    <a href="index.html">Lists of Anime</a>
+                    <a href="">Reference</a>
+                </div>
             </nav>
         </header>
+        <header>
 
-        <main>
-            <h1>All Anime Theme Songs</h1>
-            <p>The website was created by Zwea Htet, who is a beginner web developer. Htet is working on making a website that bloggers and anime fans can listen and download soundtracks from popular anime. You do not have to pay any fees to download and this website is ad-free so that you will not be interrupted by those inevitable ads like other websites.</p>
-        
-        </main>
-        
+        <!-- Use any element to open the sidenav -->
+        <span class="hidden-menu" onclick="openNav()"><!--Menu icon-->&#9776;Menu</span>
 
+        <div class="search-bar">
+            <input type="search" id="mySearch" placeholder="Search Anime here ..." size="30" name="search-bar">
+            <button onclick="mySearchFunction()"> Search </button>
+        </div>
+
+            <!-- Bar-search-items -->
+            <div id="myBtnContainer" style="margin-top: 100px">
+                <center>
+                    <table cellspacing="1" cellpadding="1" border="0" align="center" bgcolor="#5C5C5C">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table width="750" cellspacing="3" cellpadding="3" border="0" align="center" bgcolor="#282828">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn active" onclick="filterSelection('all')"> All </button>
+                                                    </font>
+                                                </td>
+                                                <td>   
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('A')"> A </button>
+                                                    </font>
+                                                </td>
+                                                <td>   
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('B')"> B </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('C')"> C </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('D')"> D </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('E')"> E </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('F')"> F </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('G')"> G </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('H')"> H </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('I')"> I </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('J')"> J </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('K')"> K </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('L')"> L </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('M')"> M </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('N')"> N </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('O')"> O </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('P')"> P </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('Q')"> Q </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('R')"> R </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('S')"> S </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('T')"> T </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('U')"> U </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('V')"> V </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('W')"> W </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('X')"> X </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('Y')"> Y </button>
+                                                    </font>
+                                                </td>
+                                                <td>
+                                                    <font size="3">
+                                                        <button class="btn" onclick="filterSelection('Z')"> Z </button>
+                                                    </font>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>    
+        </header>
+            
+            <!-- search results -->
+            <div id="search-results"></div>
+
+            <!-- lists-contents -->
+            <div class = "row">
+                <!-- first column -->
+                <div class = "column N" >
+                    <div class= "content">
+                        <img src="https://i.imgur.com/sjuCDTP.jpg" alt="young-naruto">
+                        <p><a href="naruto.html">Naruto</a></p>
+                    </div>
+                </div>
+
+                <div class="column S A O">
+                    <div class= "content">
+                        <img src="https://images4.alphacoders.com/640/640956.jpg" alt="sword art online anime movie" >
+                        <p><a href="sao.html">Sword Art Online</a></p>
+                    </div>
+                </div>
+
+                <div class="column H">
+                    <div class= "content">
+                        <img src="https://images4.alphacoders.com/789/thumb-1920-789685.jpg" alt="hunter x hunter anime movie" >
+                        <p><a href="hxh.html">Hunter x Hunter</a></p>
+                    </div>
+                </div>
+
+                <div class="column D">
+                    <div class= "content">
+                        <img src="https://images5.alphacoders.com/896/thumb-1920-896569.png" alt="darling in the franxx anime" >
+                        <p><a href="darling.html">Darling in the Franxx</a></p>
+                    </div>
+                </div>
+
+                <!-- second column -->
+                <div class="column O">
+                    <div class= "content">
+                        <img src="https://images5.alphacoders.com/606/thumb-350-606284.jpg" alt="one piece characters" ">
+                        <p><a href="1piece.html">One Piece</a></p>
+                    </div>
+                </div>
+
+                <div class="column A">
+                    <div class= "content">
+                        <img src="https://images8.alphacoders.com/505/thumb-350-505616.png" alt="attack on titan clan's logo" "> 
+                        <p><a href="aot.html">Attack on Titan</a></p>
+                    </div>
+                </div>
+
+                <div class="column F">
+                    <div class= "content">
+                        <img src="http://media.comicbook.com/2017/01/fairytale-1600x900-0-222217-1280x0.jpg" alt="fairy tales anime" ">
+                        <p><a href="Ftail.html">Fariy Tail</a></p>
+                    </div>
+                </div>
+
+                <div class="column F">
+                    <div class= "content">
+                        <img src="https://images2.alphacoders.com/111/thumb-350-111290.jpg" alt="brother's hand and the power">
+                        <p><a href="fma.html">Fullmetal Alchemists</a></p>
+                    </div>
+                </div>
+
+                <!-- third column -->
+                <div class="column F">
+                    <div class= "content">
+                        <img src="https://images4.alphacoders.com/599/thumb-350-599177.png" alt="fate:stay night logo" >
+                        <p><a href="fate.sn.html">Fate: Stay Night</a></p>
+                    </div>
+                </div>
+
+                <div class="column S">
+                    <div class= "content">
+                        <img src="https://images2.alphacoders.com/748/thumb-350-748309.png" alt="a character in spirited away" >
+                        <p><a href="spirited away.html">Spirited Away</a></p>
+                    </div>
+                </div>
+
+                <div class="column K">
+                    <div class= "content">
+                        <img src="https://images8.alphacoders.com/458/thumb-350-458332.jpg" alt="the main character in kill la kill anime" >
+                        <p><a href="klkill.html">Kill la Kill</a></p>
+                    </div>
+                </div>
+
+                <div class="column Y N">
+                    <div class= "content">
+                        <img src="https://images8.alphacoders.com/737/thumb-350-737151.png" alt="the main characters in your name anime movie" >
+                        <p><a href="urname.html">Your Name</a></p>
+                    </div>
+                </div>
+
+                <!-- fourth column-->
+                <div class="column Y L">
+                    <div class= "content">
+                        <img src="https://images5.alphacoders.com/633/thumb-350-633117.jpg" alt="a girl playing violin" >
+                        <p><a href="#">Your Lie in April</a></p>
+                    </div>
+                </div>
+                        
+                <div class="column V E">
+                    <div class= "content">
+                        <img src="https://images.alphacoders.com/901/thumb-350-901101.png" alt="violet evergarden lying on the floor scattered with envelopes" >
+                        <p><a href="#">Violet Evergarden</a></p>
+                    </div>
+                </div>
+                        
+                <div class="column M N T">
+                    <div class= "content">
+                        <img src="https://images2.alphacoders.com/499/thumb-350-499590.jpg" alt="all characters from my neighbor totoro" >
+                        <p><a href="#">My Neighbor Totoro</a></p>
+                    </div>
+                </div>
+                        
+                <div class="column A S V">
+                    <div class= "content">
+                        <img src="https://images5.alphacoders.com/835/thumb-350-835652.png" alt="a boy and a girl from a silent voice" >
+                        <p><a href="#">A Silent Voice</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+
+            // nav-bar 
+             
+            var openNav = function() {
+                var openNavEl = document.getElementById("mySidenav");
+                openNavEl.style.width = "250px";
+            }
+
+            var closeNav = function () {
+                var closeNavEl = document.getElementById('mySidenav');
+                closeNavEl.style.width = "0";
+            }
+
+            // search-bar
+
+            function mySearchFunction() {
+                var x = document.getElementsByClassName("row").value;
+                document.getElementById("search-results").innerHTML = x;
+            }
+        </script>
 
     </body>
-</html>
